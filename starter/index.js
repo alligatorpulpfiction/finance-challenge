@@ -92,3 +92,29 @@ var netTotal = 0;
 var changes = [];
 var greatestIncrease = { date: '', amount: -Infinity };
 var greatestDecrease = { date: '', amount: Infinity };
+
+finances.forEach ((record, index) => {
+  var date = record[0];
+  var profitLoss = record[1];
+
+netTotal += profitLoss;
+
+if (index > 0) {
+  var change = profitLoss - finances[index - 1][1];
+  changes.push(change);
+
+if (change > greatestIncrease.amount) {
+    greatestIncrease.date = date;
+    greatestIncrease.amount = change;
+  }
+
+  if (change < greatestDecrease.amount) {
+    greatestDecrease.date = date;
+    greatestDecrease.amount = change;
+  }
+}
+});
+
+
+var totalChange = changes.reduce((acc, change) => acc + change, 0);
+var averageChange = totalChange / (totalMonths - 1);
