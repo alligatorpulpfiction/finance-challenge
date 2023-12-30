@@ -118,3 +118,13 @@ if (change > greatestIncrease.amount) {
 
 var totalChange = changes.reduce((acc, change) => acc + change, 0);
 var averageChange = totalChange / (totalMonths - 1);
+
+
+// Will display the calculations here on the console: 
+
+console.log('Financial Analysis');
+console.log('Total Months:', totalMonths);
+console.log('Total: $' + netTotal);
+console.log('Average Change: $' + averageChange.toFixed(2));
+console.log('Greatest Increase in Profits/Losses:', greatestIncrease.date, '($' + greatestIncrease.amount + ')');
+console.log('Greatest Decrease in Profits/Losses:', greatestDecrease.date, '($' + greatestDecrease.amount + ')');
