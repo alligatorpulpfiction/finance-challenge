@@ -12,8 +12,10 @@
 <li>The average of the changes in Profit/Losses over the entire period.</li>
 <li>The greatest increase in profits (date and difference in the amounts) over the entire period.</li>
 <li>The greatest decrease in losses (date and difference in the amounts) over the entire period.</li>
-  
-This applicaiton has been designed to demonstrate what she has learnt about Javascript during the fourth week of bootcamp. This has included the following:
+
+</p>
+
+<p> This application has been designed to demonstrate what she has learnt about Javascript during the fourth week of bootcamp. This has included the following:
 
 <li>Using concantenations</li>
 <li>Using arrays and loops</li>
