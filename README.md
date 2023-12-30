@@ -1,7 +1,7 @@
 <h1>JavaScript Fundamentals: Console Finances</h1>
 
 <h2>Link to deployed webpage</h2>
-
+https://alligatorpulpfiction.github.io/finance-challenge/
 
 <h2>Project description</h2>
 
